@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>Componente com dados</h1>
-        <p>Nome: caneta - #123</p>
+        <p>Nome: {{ nomeProduto }} - {{ codigoProduto }}</p>
     </div>
 </template>
 
@@ -15,9 +15,39 @@
         margin: 30px;
         padding: 10px;
     }
+
+    p {
+        font-size: 1.2rem;
+    }
 </style>
 
 
-<script>
-    
+<script setup>
+    const nomeProduto = "Apontador"
+    const codigoProduto = "#987"
 </script>
+
+<!-- <script>
+    // Options API
+    // export default {
+    //     data: () => {
+    //         return {
+    //             nomeProduto: "Caderno",
+    //             codigoProduto: "#321"
+    //         }
+    //     }
+    // }
+
+    // Composition API
+    // export default {
+    //     setup: () => {
+    //         const nomeProduto = "Lápis"
+    //         const codigoProduto = "#789"
+
+    //         return {
+    //             nomeProduto,
+    //             codigoProduto
+    //         }
+    //     }
+    // }
+</script> -->
