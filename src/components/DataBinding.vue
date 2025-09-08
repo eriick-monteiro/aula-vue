@@ -1,0 +1,16 @@
+<template>
+    <div class="componente">
+        <h1>Compontente com Data Binding</h1>
+        <input type="text" v-bind:value="valor">
+        <input type="text" v-bind:value="valor" v-on:input="(e) => valor = e.target.value">
+        <input type="text" :value="valor" @input="(e) => valor = e.target.value">
+        <input type="text" v-model="valor">
+        <p>{{ valor }}</p>
+    </div>
+</template>
+
+<script setup>
+    import { ref } from 'vue';
+
+    const valor = ref("Hello, Vue!")
+</script>
