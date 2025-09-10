@@ -6,6 +6,8 @@
   import DataBinding from './components/DataBinding.vue';
   import ComProps from './components/ComProps.vue';
   import EscutaEvento from './components/EscutaEvento.vue';
+  import PropriedadesComputadas from './components/PropriedadesComputadas.vue';
+  import PropriedadesAssistidas from './components/PropriedadesAssistidas.vue';
 
   const borracha = "borracha"
   const precoBorracha = 3.50
@@ -13,6 +15,8 @@
 
 <template>
   <header>Vue</header>
+  <PropriedadesAssistidas />
+  <PropriedadesComputadas />
   <EscutaEvento />
   <ComProps item="Borracha" :preco="2.50"/>
   <ComProps :item="borracha" :preco="precoBorracha"/>
