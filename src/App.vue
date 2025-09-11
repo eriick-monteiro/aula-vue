@@ -9,13 +9,46 @@
   import PropriedadesComputadas from './components/PropriedadesComputadas.vue';
   import PropriedadesAssistidas from './components/PropriedadesAssistidas.vue';
   import RenderizacaoCondicional from './components/RenderizacaoCondicional.vue';
+  import RenderizacaoListas from './components/RenderizacaoListas.vue';
 
   const borracha = "borracha"
   const precoBorracha = 3.50
+  const funcionarios = [
+    {
+      "nome": "Erick",
+      "idade": 22
+    },
+    {
+      "nome": "Sarah",
+      "idade": 22
+    },
+    {
+      "nome": "Erik",
+      "idade": 22
+    },
+    {
+      "nome": "Fernanda",
+      "idade": 22
+    },
+    {
+      "nome": "Victória",
+      "idade": 22
+    },
+    {
+      "nome": "Graziele",
+      "idade": 33
+    },
+    {
+      "nome": "Larissa",
+      "idade": 22
+    },
+  ];
+
 </script>
 
 <template>
   <header>Vue</header>
+  <RenderizacaoListas nome="Fictícia" :funcionarios="funcionarios" />
   <RenderizacaoCondicional nome="Márcia" :qtde-cachorros="0"/>
   <PropriedadesAssistidas />
   <PropriedadesComputadas />
