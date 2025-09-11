@@ -8,6 +8,7 @@
   import EscutaEvento from './components/EscutaEvento.vue';
   import PropriedadesComputadas from './components/PropriedadesComputadas.vue';
   import PropriedadesAssistidas from './components/PropriedadesAssistidas.vue';
+  import RenderizacaoCondicional from './components/RenderizacaoCondicional.vue';
 
   const borracha = "borracha"
   const precoBorracha = 3.50
@@ -15,6 +16,7 @@
 
 <template>
   <header>Vue</header>
+  <RenderizacaoCondicional nome="Márcia" :qtde-cachorros="0"/>
   <PropriedadesAssistidas />
   <PropriedadesComputadas />
   <EscutaEvento />
